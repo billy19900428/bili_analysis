@@ -109,7 +109,7 @@ st.markdown(
 
 
 # 调用后端逻辑
-from crew import run_crew          # ① 导入函数
+from .crew import run_crew          # ① 导入函数
 
 if deep_btn:
     if not keyword or keyword.strip() == "":
