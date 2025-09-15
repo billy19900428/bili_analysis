@@ -109,7 +109,7 @@ st.markdown(
 
 
 # 调用后端逻辑
-from .crew import run_crew          # ① 导入函数
+from crew import run_crew          # ① 导入函数
 
 if deep_btn:
     if not keyword or keyword.strip() == "":
@@ -129,7 +129,7 @@ if deep_btn:
     pdf_path = "b站洞察报告.pdf"
 
     # 展示
-    tab1, tab2, tab3 = st.tabs(["📄 报告预览", "📋 数据明细", "⬇️ 下载 PDF"])
+    tab1, tab2, tab3 = st.tabs(["📄 报告预览", "📋 数据明细", "⬇️ 下载报告"])
     with tab1:
         col1, col2 = st.columns(2)
         with col1:
